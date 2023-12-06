@@ -1,5 +1,5 @@
-CCX := g++
-CCXFLAGS := -std=c++17 -Wall
+CXX := g++
+CXXFLAGS := -std=c++17 -Wall
 
 all:
 	for dir in day*; do \
@@ -9,7 +9,7 @@ all:
 	    fi; \
   		for file in $$dir/*.cpp; do \
   			target=$$(basename $$file .cpp); \
-			$(CCX) $(CCXFLAGS) $$file -o $$dir/build/$$target; \
+			$(CXX) $(CXXFLAGS) $$file -o $$dir/build/$$target; \
 		done \
 	done
 
