@@ -15,6 +15,8 @@ int main() {
     std::cout << (test() ? "TEST PASSED" : "TEST NOT PASSED") << std::endl;
 
     ifstream file("./day01/build/input.txt");
+    if (!file.is_open()) file.open("input.txt");
+    if (!file.is_open()) return 1;
 
     int total = 0;
     string line;
@@ -27,6 +29,7 @@ int main() {
 
     std::cout << "Total result: " << total << std::endl;
 
+    file.close();
     return 0;
 }
 
