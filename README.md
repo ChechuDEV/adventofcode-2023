@@ -10,6 +10,7 @@ on test.
 
 ## Progress
 Day 1 - 06/12/2023
+Day 2 - 07/12/2023
 
 ## Getting started
 If you're willing to do the advent of code 
